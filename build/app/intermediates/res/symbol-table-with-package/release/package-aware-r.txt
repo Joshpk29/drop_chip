@@ -1,4 +1,4 @@
-com.example.drop_chip
+com.appDevelopment.drop_chip
 attr alpha
 attr buttonSize
 attr circleCrop

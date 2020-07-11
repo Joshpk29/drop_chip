@@ -1,7 +1,7 @@
 # compiler: R8
 # compiler_version: 1.5.64
 # min_api: 16
-# pg_map_id: 48105e3
+# pg_map_id: 2c23ca0
 androidx.arch.core.executor.ArchTaskExecutor -> a.a.a.a.a:
     androidx.arch.core.executor.ArchTaskExecutor sInstance -> c
     androidx.arch.core.executor.TaskExecutor mDefaultTaskExecutor -> b
@@ -1678,7 +1678,7 @@ androidx.versionedparcelable.VersionedParcelParcel -> androidx.versionedparcelab
     android.os.Parcelable readParcelable() -> f
     java.lang.String readString() -> g
 androidx.versionedparcelable.VersionedParcelable -> androidx.versionedparcelable.c:
-com.example.drop_chip.MainActivity -> com.example.drop_chip.MainActivity:
+com.appDevelopment.drop_chip.MainActivity -> com.appDevelopment.drop_chip.MainActivity:
     void configureFlutterEngine(io.flutter.embedding.engine.FlutterEngine) -> b
 com.google.android.gms.ads.identifier.AdvertisingIdClient -> b.a.a.a.a.a.a:
     com.google.android.gms.common.BlockingServiceConnection zze -> a
@@ -20266,23 +20266,28 @@ com.google.type.LatLng$Builder -> b.a.i.a$b:
 com.google.type.LatLngOrBuilder -> b.a.i.b:
 com.mr.flutter.plugin.filepicker.FilePickerDelegate -> com.mr.flutter.plugin.filepicker.a:
     com.mr.flutter.plugin.filepicker.FilePickerDelegate$PermissionManager permissionManager -> b
-    int REQUEST_CODE -> g
+    int REQUEST_CODE -> h
     java.lang.String[] allowedExtensions -> f
+    io.flutter.plugin.common.EventChannel$EventSink eventSink -> g
     android.app.Activity activity -> a
     java.lang.String type -> e
     io.flutter.plugin.common.MethodChannel$Result pendingResult -> c
     boolean isMultipleSelection -> d
     android.app.Activity access$000(com.mr.flutter.plugin.filepicker.FilePickerDelegate) -> a
     void access$100(com.mr.flutter.plugin.filepicker.FilePickerDelegate,java.lang.Object) -> a
-    void access$200(com.mr.flutter.plugin.filepicker.FilePickerDelegate,java.lang.String,java.lang.String) -> a
+    void access$300(com.mr.flutter.plugin.filepicker.FilePickerDelegate,java.lang.String,java.lang.String) -> a
     void clearPendingResult() -> a
+    void dispatchEventStatus(boolean) -> a
     void finishWithAlreadyActiveError(io.flutter.plugin.common.MethodChannel$Result) -> a
     void finishWithError(java.lang.String,java.lang.String) -> a
     void finishWithSuccess(java.lang.Object) -> a
     boolean onActivityResult(int,int,android.content.Intent) -> a
+    void setEventHandler(io.flutter.plugin.common.EventChannel$EventSink) -> a
     void startFileExplorer(java.lang.String,boolean,java.lang.String[],io.flutter.plugin.common.MethodChannel$Result) -> a
+    java.lang.String access$200(com.mr.flutter.plugin.filepicker.FilePickerDelegate) -> b
     boolean setPendingMethodCallAndResult(io.flutter.plugin.common.MethodChannel$Result) -> b
     void startFileExplorer() -> b
+    io.flutter.plugin.common.EventChannel$EventSink access$400(com.mr.flutter.plugin.filepicker.FilePickerDelegate) -> c
 com.mr.flutter.plugin.filepicker.FilePickerDelegate$1 -> com.mr.flutter.plugin.filepicker.a$a:
     android.app.Activity val$activity -> a
     void askForPermission(java.lang.String,int) -> a
@@ -20290,7 +20295,10 @@ com.mr.flutter.plugin.filepicker.FilePickerDelegate$1 -> com.mr.flutter.plugin.f
 com.mr.flutter.plugin.filepicker.FilePickerDelegate$2 -> com.mr.flutter.plugin.filepicker.a$b:
     android.content.Intent val$data -> a
     com.mr.flutter.plugin.filepicker.FilePickerDelegate this$0 -> b
-com.mr.flutter.plugin.filepicker.FilePickerDelegate$PermissionManager -> com.mr.flutter.plugin.filepicker.a$c:
+com.mr.flutter.plugin.filepicker.FilePickerDelegate$3 -> com.mr.flutter.plugin.filepicker.a$c:
+    boolean val$status -> a
+    com.mr.flutter.plugin.filepicker.FilePickerDelegate this$0 -> b
+com.mr.flutter.plugin.filepicker.FilePickerDelegate$PermissionManager -> com.mr.flutter.plugin.filepicker.a$d:
     void askForPermission(java.lang.String,int) -> a
     boolean isPermissionGranted(java.lang.String) -> a
 com.mr.flutter.plugin.filepicker.FilePickerPlugin -> com.mr.flutter.plugin.filepicker.FilePickerPlugin:
@@ -20304,6 +20312,7 @@ com.mr.flutter.plugin.filepicker.FilePickerPlugin -> com.mr.flutter.plugin.filep
     io.flutter.plugin.common.MethodChannel channel -> h
     androidx.lifecycle.Lifecycle lifecycle -> e
     com.mr.flutter.plugin.filepicker.FilePickerDelegate delegate -> b
+    com.mr.flutter.plugin.filepicker.FilePickerDelegate access$100(com.mr.flutter.plugin.filepicker.FilePickerPlugin) -> a
     void onAttachedToActivity(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding) -> a
     void onAttachedToEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding) -> a
     void onDetachedFromActivity() -> a
@@ -20314,6 +20323,10 @@ com.mr.flutter.plugin.filepicker.FilePickerPlugin -> com.mr.flutter.plugin.filep
     void onDetachedFromEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding) -> b
     void onReattachedToActivityForConfigChanges(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding) -> b
     void tearDown() -> c
+com.mr.flutter.plugin.filepicker.FilePickerPlugin$1 -> com.mr.flutter.plugin.filepicker.FilePickerPlugin$a:
+    com.mr.flutter.plugin.filepicker.FilePickerPlugin this$0 -> a
+    void onCancel(java.lang.Object) -> a
+    void onListen(java.lang.Object,io.flutter.plugin.common.EventChannel$EventSink) -> a
 com.mr.flutter.plugin.filepicker.FilePickerPlugin$LifeCycleObserver -> com.mr.flutter.plugin.filepicker.FilePickerPlugin$LifeCycleObserver:
     android.app.Activity thisActivity -> a
     void onResume(androidx.lifecycle.LifecycleOwner) -> a
@@ -20322,36 +20335,40 @@ com.mr.flutter.plugin.filepicker.FilePickerPlugin$LifeCycleObserver -> com.mr.fl
     void onPause(androidx.lifecycle.LifecycleOwner) -> d
     void onStop(androidx.lifecycle.LifecycleOwner) -> e
     void onStart(androidx.lifecycle.LifecycleOwner) -> f
-com.mr.flutter.plugin.filepicker.FilePickerPlugin$MethodResultWrapper -> com.mr.flutter.plugin.filepicker.FilePickerPlugin$a:
+com.mr.flutter.plugin.filepicker.FilePickerPlugin$MethodResultWrapper -> com.mr.flutter.plugin.filepicker.FilePickerPlugin$b:
     io.flutter.plugin.common.MethodChannel$Result methodResult -> a
     android.os.Handler handler -> b
     io.flutter.plugin.common.MethodChannel$Result access$000(com.mr.flutter.plugin.filepicker.FilePickerPlugin$MethodResultWrapper) -> a
     void error(java.lang.String,java.lang.String,java.lang.Object) -> a
     void notImplemented() -> a
     void success(java.lang.Object) -> a
-com.mr.flutter.plugin.filepicker.FilePickerPlugin$MethodResultWrapper$1 -> com.mr.flutter.plugin.filepicker.FilePickerPlugin$a$a:
+com.mr.flutter.plugin.filepicker.FilePickerPlugin$MethodResultWrapper$1 -> com.mr.flutter.plugin.filepicker.FilePickerPlugin$b$a:
     java.lang.Object val$result -> a
     com.mr.flutter.plugin.filepicker.FilePickerPlugin$MethodResultWrapper this$0 -> b
-com.mr.flutter.plugin.filepicker.FilePickerPlugin$MethodResultWrapper$2 -> com.mr.flutter.plugin.filepicker.FilePickerPlugin$a$b:
+com.mr.flutter.plugin.filepicker.FilePickerPlugin$MethodResultWrapper$2 -> com.mr.flutter.plugin.filepicker.FilePickerPlugin$b$b:
     java.lang.Object val$errorDetails -> c
     com.mr.flutter.plugin.filepicker.FilePickerPlugin$MethodResultWrapper this$0 -> d
     java.lang.String val$errorCode -> a
     java.lang.String val$errorMessage -> b
-com.mr.flutter.plugin.filepicker.FilePickerPlugin$MethodResultWrapper$3 -> com.mr.flutter.plugin.filepicker.FilePickerPlugin$a$c:
+com.mr.flutter.plugin.filepicker.FilePickerPlugin$MethodResultWrapper$3 -> com.mr.flutter.plugin.filepicker.FilePickerPlugin$b$c:
     com.mr.flutter.plugin.filepicker.FilePickerPlugin$MethodResultWrapper this$0 -> a
 com.mr.flutter.plugin.filepicker.FileUtils -> com.mr.flutter.plugin.filepicker.b:
     boolean clearCache(android.content.Context) -> a
     java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[]) -> a
+    java.lang.String getDocumentPathFromTreeUri(android.net.Uri) -> a
     java.lang.String getFileName(android.net.Uri,android.content.Context) -> a
     java.lang.String getForApi19(android.content.Context,android.net.Uri) -> a
     java.lang.String[] getMimeTypes(java.util.ArrayList) -> a
-    boolean isDownloadsDocument(android.net.Uri) -> a
-    java.lang.String getPath(android.net.Uri,android.content.Context) -> b
+    java.lang.String getVolumePath(java.lang.String,android.content.Context) -> a
+    java.lang.String getFullPathFromTreeUri(android.net.Uri,android.content.Context) -> b
     java.lang.String getUriFromRemote(android.content.Context,android.net.Uri) -> b
-    boolean isDropBoxUri(android.net.Uri) -> b
-    boolean isExternalStorageDocument(android.net.Uri) -> c
-    boolean isGooglePhotosUri(android.net.Uri) -> d
-    boolean isMediaDocument(android.net.Uri) -> e
+    java.lang.String getVolumeIdFromTreeUri(android.net.Uri) -> b
+    java.lang.String getPath(android.net.Uri,android.content.Context) -> c
+    boolean isDownloadsDocument(android.net.Uri) -> c
+    boolean isDropBoxUri(android.net.Uri) -> d
+    boolean isExternalStorageDocument(android.net.Uri) -> e
+    boolean isGooglePhotosUri(android.net.Uri) -> f
+    boolean isMediaDocument(android.net.Uri) -> g
 com.squareup.okhttp.Credentials -> b.b.a.a:
     java.lang.String basic(java.lang.String,java.lang.String) -> a
 com.squareup.okhttp.Headers -> b.b.a.b:
@@ -20849,6 +20866,7 @@ io.flutter.embedding.engine.dart.DartExecutor -> io.flutter.embedding.engine.e.a
     java.lang.String access$002(io.flutter.embedding.engine.dart.DartExecutor,java.lang.String) -> a
     void executeDartEntrypoint(io.flutter.embedding.engine.dart.DartExecutor$DartEntrypoint) -> a
     java.lang.String getIsolateServiceId() -> a
+    void send(java.lang.String,java.nio.ByteBuffer) -> a
     void send(java.lang.String,java.nio.ByteBuffer,io.flutter.plugin.common.BinaryMessenger$BinaryReply) -> a
     void setMessageHandler(java.lang.String,io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler) -> a
     io.flutter.embedding.engine.dart.DartExecutor$IsolateServiceIdListener access$100(io.flutter.embedding.engine.dart.DartExecutor) -> b
@@ -20863,6 +20881,7 @@ io.flutter.embedding.engine.dart.DartExecutor$DartEntrypoint -> io.flutter.embed
     java.lang.String dartEntrypointFunctionName -> b
 io.flutter.embedding.engine.dart.DartExecutor$DefaultBinaryMessenger -> io.flutter.embedding.engine.e.a$c:
     io.flutter.embedding.engine.dart.DartMessenger messenger -> a
+    void send(java.lang.String,java.nio.ByteBuffer) -> a
     void send(java.lang.String,java.nio.ByteBuffer,io.flutter.plugin.common.BinaryMessenger$BinaryReply) -> a
     void setMessageHandler(java.lang.String,io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler) -> a
 io.flutter.embedding.engine.dart.DartExecutor$IsolateServiceIdListener -> io.flutter.embedding.engine.e.a$d:
@@ -20874,6 +20893,7 @@ io.flutter.embedding.engine.dart.DartMessenger -> io.flutter.embedding.engine.e.
     int nextReplyId -> d
     void handleMessageFromDart(java.lang.String,byte[],int) -> a
     void handlePlatformMessageResponse(int,byte[]) -> a
+    void send(java.lang.String,java.nio.ByteBuffer) -> a
     void send(java.lang.String,java.nio.ByteBuffer,io.flutter.plugin.common.BinaryMessenger$BinaryReply) -> a
     void setMessageHandler(java.lang.String,io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler) -> a
 io.flutter.embedding.engine.dart.DartMessenger$Reply -> io.flutter.embedding.engine.e.b$a:
@@ -21371,20 +21391,47 @@ io.flutter.plugin.common.BasicMessageChannel$MessageHandler -> c.a.c.a.a$d:
 io.flutter.plugin.common.BasicMessageChannel$Reply -> c.a.c.a.a$e:
     void reply(java.lang.Object) -> a
 io.flutter.plugin.common.BinaryMessenger -> c.a.c.a.b:
+    void send(java.lang.String,java.nio.ByteBuffer) -> a
     void send(java.lang.String,java.nio.ByteBuffer,io.flutter.plugin.common.BinaryMessenger$BinaryReply) -> a
     void setMessageHandler(java.lang.String,io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler) -> a
 io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler -> c.a.c.a.b$a:
     void onMessage(java.nio.ByteBuffer,io.flutter.plugin.common.BinaryMessenger$BinaryReply) -> a
 io.flutter.plugin.common.BinaryMessenger$BinaryReply -> c.a.c.a.b$b:
     void reply(java.nio.ByteBuffer) -> a
-io.flutter.plugin.common.FlutterException -> c.a.c.a.c:
+io.flutter.plugin.common.EventChannel -> c.a.c.a.c:
+    io.flutter.plugin.common.MethodCodec codec -> c
+    io.flutter.plugin.common.BinaryMessenger messenger -> a
+    java.lang.String name -> b
+    io.flutter.plugin.common.MethodCodec access$000(io.flutter.plugin.common.EventChannel) -> a
+    void setStreamHandler(io.flutter.plugin.common.EventChannel$StreamHandler) -> a
+    java.lang.String access$200(io.flutter.plugin.common.EventChannel) -> b
+    io.flutter.plugin.common.BinaryMessenger access$400(io.flutter.plugin.common.EventChannel) -> c
+io.flutter.plugin.common.EventChannel$1 -> c.a.c.a.c$a:
+io.flutter.plugin.common.EventChannel$EventSink -> c.a.c.a.c$b:
+    void success(java.lang.Object) -> a
+io.flutter.plugin.common.EventChannel$IncomingStreamRequestHandler -> c.a.c.a.c$c:
+    io.flutter.plugin.common.EventChannel this$0 -> c
+    java.util.concurrent.atomic.AtomicReference activeSink -> b
+    io.flutter.plugin.common.EventChannel$StreamHandler handler -> a
+    java.util.concurrent.atomic.AtomicReference access$300(io.flutter.plugin.common.EventChannel$IncomingStreamRequestHandler) -> a
+    void onCancel(java.lang.Object,io.flutter.plugin.common.BinaryMessenger$BinaryReply) -> a
+    void onMessage(java.nio.ByteBuffer,io.flutter.plugin.common.BinaryMessenger$BinaryReply) -> a
+    void onListen(java.lang.Object,io.flutter.plugin.common.BinaryMessenger$BinaryReply) -> b
+io.flutter.plugin.common.EventChannel$IncomingStreamRequestHandler$EventSinkImplementation -> c.a.c.a.c$c$a:
+    io.flutter.plugin.common.EventChannel$IncomingStreamRequestHandler this$1 -> b
+    java.util.concurrent.atomic.AtomicBoolean hasEnded -> a
+    void success(java.lang.Object) -> a
+io.flutter.plugin.common.EventChannel$StreamHandler -> c.a.c.a.c$d:
+    void onCancel(java.lang.Object) -> a
+    void onListen(java.lang.Object,io.flutter.plugin.common.EventChannel$EventSink) -> a
+io.flutter.plugin.common.FlutterException -> c.a.c.a.d:
     java.lang.Object details -> b
     java.lang.String code -> a
-io.flutter.plugin.common.JSONMessageCodec -> c.a.c.a.d:
+io.flutter.plugin.common.JSONMessageCodec -> c.a.c.a.e:
     io.flutter.plugin.common.JSONMessageCodec INSTANCE -> a
     java.lang.Object decodeMessage(java.nio.ByteBuffer) -> a
     java.nio.ByteBuffer encodeMessage(java.lang.Object) -> a
-io.flutter.plugin.common.JSONMethodCodec -> c.a.c.a.e:
+io.flutter.plugin.common.JSONMethodCodec -> c.a.c.a.f:
     io.flutter.plugin.common.JSONMethodCodec INSTANCE -> a
     io.flutter.plugin.common.MethodCall decodeMethodCall(java.nio.ByteBuffer) -> a
     java.nio.ByteBuffer encodeErrorEnvelope(java.lang.String,java.lang.String,java.lang.Object) -> a
@@ -21392,17 +21439,17 @@ io.flutter.plugin.common.JSONMethodCodec -> c.a.c.a.e:
     java.nio.ByteBuffer encodeSuccessEnvelope(java.lang.Object) -> a
     java.lang.Object decodeEnvelope(java.nio.ByteBuffer) -> b
     java.lang.Object unwrapNull(java.lang.Object) -> b
-io.flutter.plugin.common.JSONUtil -> c.a.c.a.f:
+io.flutter.plugin.common.JSONUtil -> c.a.c.a.g:
     java.lang.Object wrap(java.lang.Object) -> a
-io.flutter.plugin.common.MessageCodec -> c.a.c.a.g:
+io.flutter.plugin.common.MessageCodec -> c.a.c.a.h:
     java.lang.Object decodeMessage(java.nio.ByteBuffer) -> a
     java.nio.ByteBuffer encodeMessage(java.lang.Object) -> a
-io.flutter.plugin.common.MethodCall -> c.a.c.a.h:
+io.flutter.plugin.common.MethodCall -> c.a.c.a.i:
     java.lang.Object arguments -> b
     java.lang.String method -> a
     java.lang.Object argument(java.lang.String) -> a
     java.lang.Object arguments() -> a
-io.flutter.plugin.common.MethodChannel -> c.a.c.a.i:
+io.flutter.plugin.common.MethodChannel -> c.a.c.a.j:
     io.flutter.plugin.common.MethodCodec codec -> c
     io.flutter.plugin.common.BinaryMessenger messenger -> a
     java.lang.String name -> b
@@ -21411,47 +21458,47 @@ io.flutter.plugin.common.MethodChannel -> c.a.c.a.i:
     void invokeMethod(java.lang.String,java.lang.Object,io.flutter.plugin.common.MethodChannel$Result) -> a
     void setMethodCallHandler(io.flutter.plugin.common.MethodChannel$MethodCallHandler) -> a
     java.lang.String access$100(io.flutter.plugin.common.MethodChannel) -> b
-io.flutter.plugin.common.MethodChannel$IncomingMethodCallHandler -> c.a.c.a.i$a:
+io.flutter.plugin.common.MethodChannel$IncomingMethodCallHandler -> c.a.c.a.j$a:
     io.flutter.plugin.common.MethodChannel$MethodCallHandler handler -> a
     io.flutter.plugin.common.MethodChannel this$0 -> b
     void onMessage(java.nio.ByteBuffer,io.flutter.plugin.common.BinaryMessenger$BinaryReply) -> a
-io.flutter.plugin.common.MethodChannel$IncomingMethodCallHandler$1 -> c.a.c.a.i$a$a:
+io.flutter.plugin.common.MethodChannel$IncomingMethodCallHandler$1 -> c.a.c.a.j$a$a:
     io.flutter.plugin.common.BinaryMessenger$BinaryReply val$reply -> a
     io.flutter.plugin.common.MethodChannel$IncomingMethodCallHandler this$1 -> b
     void error(java.lang.String,java.lang.String,java.lang.Object) -> a
     void notImplemented() -> a
     void success(java.lang.Object) -> a
-io.flutter.plugin.common.MethodChannel$IncomingResultHandler -> c.a.c.a.i$b:
+io.flutter.plugin.common.MethodChannel$IncomingResultHandler -> c.a.c.a.j$b:
     io.flutter.plugin.common.MethodChannel$Result callback -> a
     io.flutter.plugin.common.MethodChannel this$0 -> b
     void reply(java.nio.ByteBuffer) -> a
-io.flutter.plugin.common.MethodChannel$MethodCallHandler -> c.a.c.a.i$c:
+io.flutter.plugin.common.MethodChannel$MethodCallHandler -> c.a.c.a.j$c:
     void onMethodCall(io.flutter.plugin.common.MethodCall,io.flutter.plugin.common.MethodChannel$Result) -> a
-io.flutter.plugin.common.MethodChannel$Result -> c.a.c.a.i$d:
+io.flutter.plugin.common.MethodChannel$Result -> c.a.c.a.j$d:
     void error(java.lang.String,java.lang.String,java.lang.Object) -> a
     void notImplemented() -> a
     void success(java.lang.Object) -> a
-io.flutter.plugin.common.MethodCodec -> c.a.c.a.j:
+io.flutter.plugin.common.MethodCodec -> c.a.c.a.k:
     io.flutter.plugin.common.MethodCall decodeMethodCall(java.nio.ByteBuffer) -> a
     java.nio.ByteBuffer encodeErrorEnvelope(java.lang.String,java.lang.String,java.lang.Object) -> a
     java.nio.ByteBuffer encodeMethodCall(io.flutter.plugin.common.MethodCall) -> a
     java.nio.ByteBuffer encodeSuccessEnvelope(java.lang.Object) -> a
     java.lang.Object decodeEnvelope(java.nio.ByteBuffer) -> b
-io.flutter.plugin.common.PluginRegistry -> c.a.c.a.k:
-io.flutter.plugin.common.PluginRegistry$ActivityResultListener -> c.a.c.a.k$a:
+io.flutter.plugin.common.PluginRegistry -> c.a.c.a.l:
+io.flutter.plugin.common.PluginRegistry$ActivityResultListener -> c.a.c.a.l$a:
     boolean onActivityResult(int,int,android.content.Intent) -> a
-io.flutter.plugin.common.PluginRegistry$NewIntentListener -> c.a.c.a.k$b:
+io.flutter.plugin.common.PluginRegistry$NewIntentListener -> c.a.c.a.l$b:
     boolean onNewIntent(android.content.Intent) -> a
-io.flutter.plugin.common.PluginRegistry$Registrar -> c.a.c.a.k$c:
+io.flutter.plugin.common.PluginRegistry$Registrar -> c.a.c.a.l$c:
     io.flutter.plugin.common.PluginRegistry$Registrar addActivityResultListener(io.flutter.plugin.common.PluginRegistry$ActivityResultListener) -> a
     io.flutter.plugin.common.PluginRegistry$Registrar addRequestPermissionsResultListener(io.flutter.plugin.common.PluginRegistry$RequestPermissionsResultListener) -> a
     android.app.Activity activity() -> c
-io.flutter.plugin.common.PluginRegistry$RequestPermissionsResultListener -> c.a.c.a.k$d:
-io.flutter.plugin.common.PluginRegistry$UserLeaveHintListener -> c.a.c.a.k$e:
+io.flutter.plugin.common.PluginRegistry$RequestPermissionsResultListener -> c.a.c.a.l$d:
+io.flutter.plugin.common.PluginRegistry$UserLeaveHintListener -> c.a.c.a.l$e:
     void onUserLeaveHint() -> a
-io.flutter.plugin.common.PluginRegistry$ViewDestroyListener -> c.a.c.a.k$f:
+io.flutter.plugin.common.PluginRegistry$ViewDestroyListener -> c.a.c.a.l$f:
     boolean onViewDestroy(io.flutter.view.FlutterNativeView) -> a
-io.flutter.plugin.common.StandardMessageCodec -> c.a.c.a.l:
+io.flutter.plugin.common.StandardMessageCodec -> c.a.c.a.m:
     java.nio.charset.Charset UTF8 -> c
     io.flutter.plugin.common.StandardMessageCodec INSTANCE -> a
     boolean LITTLE_ENDIAN -> b
@@ -21470,9 +21517,9 @@ io.flutter.plugin.common.StandardMessageCodec -> c.a.c.a.l:
     void writeInt(java.io.ByteArrayOutputStream,int) -> c
     int readSize(java.nio.ByteBuffer) -> d
     void writeSize(java.io.ByteArrayOutputStream,int) -> d
-io.flutter.plugin.common.StandardMessageCodec$ExposedByteArrayOutputStream -> c.a.c.a.l$a:
+io.flutter.plugin.common.StandardMessageCodec$ExposedByteArrayOutputStream -> c.a.c.a.m$a:
     byte[] buffer() -> g
-io.flutter.plugin.common.StandardMethodCodec -> c.a.c.a.m:
+io.flutter.plugin.common.StandardMethodCodec -> c.a.c.a.n:
     io.flutter.plugin.common.StandardMessageCodec messageCodec -> a
     io.flutter.plugin.common.StandardMethodCodec INSTANCE -> b
     io.flutter.plugin.common.MethodCall decodeMethodCall(java.nio.ByteBuffer) -> a
@@ -21480,7 +21527,7 @@ io.flutter.plugin.common.StandardMethodCodec -> c.a.c.a.m:
     java.nio.ByteBuffer encodeMethodCall(io.flutter.plugin.common.MethodCall) -> a
     java.nio.ByteBuffer encodeSuccessEnvelope(java.lang.Object) -> a
     java.lang.Object decodeEnvelope(java.nio.ByteBuffer) -> b
-io.flutter.plugin.common.StringCodec -> c.a.c.a.n:
+io.flutter.plugin.common.StringCodec -> c.a.c.a.o:
     java.nio.charset.Charset UTF8 -> a
     io.flutter.plugin.common.StringCodec INSTANCE -> b
     java.lang.Object decodeMessage(java.nio.ByteBuffer) -> a
@@ -21752,9 +21799,9 @@ io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin -> io.flutter.pl
     android.util.SparseArray transactions -> i
     android.app.Activity activity -> b
     android.util.SparseArray completionTasks -> j
-    io.flutter.plugin.common.MethodChannel access$000(io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin) -> a
-    java.util.Map access$100(io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin,com.google.firebase.firestore.QuerySnapshot) -> a
-    com.google.firebase.firestore.DocumentReference access$500(io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin,java.util.Map) -> a
+    io.flutter.plugin.common.MethodChannel access$100(io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin) -> a
+    java.util.Map access$200(io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin,com.google.firebase.firestore.QuerySnapshot) -> a
+    com.google.firebase.firestore.DocumentReference access$600(io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin,java.util.Map) -> a
     void addDefaultListeners(java.lang.String,com.google.android.gms.tasks.Task,io.flutter.plugin.common.MethodChannel$Result) -> a
     com.google.firebase.firestore.Query getCollectionGroupReference(java.util.Map) -> a
     java.lang.Object[] getDocumentValues(java.util.Map,java.util.List,java.util.Map) -> a
@@ -21764,80 +21811,74 @@ io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin -> io.flutter.pl
     void onDetachedFromActivity() -> a
     void onMethodCall(io.flutter.plugin.common.MethodCall,io.flutter.plugin.common.MethodChannel$Result) -> a
     java.util.Map parseQuerySnapshot(com.google.firebase.firestore.QuerySnapshot) -> a
-    android.util.SparseArray access$200(io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin) -> b
+    android.util.SparseArray access$300(io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin) -> b
     com.google.firebase.firestore.CollectionReference getCollectionReference(java.util.Map) -> b
     void onDetachedFromActivityForConfigChanges() -> b
     void onDetachedFromEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding) -> b
     void onReattachedToActivityForConfigChanges(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding) -> b
-    android.util.SparseArray access$300(io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin) -> c
+    android.util.SparseArray access$400(io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin) -> c
     void attachToActivity(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding) -> c
     void detachToActivity() -> c
     com.google.firebase.firestore.DocumentReference getDocumentReference(java.util.Map) -> c
-    android.app.Activity access$400(io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin) -> d
+    android.app.Activity access$500(io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin) -> d
     com.google.firebase.firestore.FirebaseFirestore getFirestore(java.util.Map) -> d
+    void onDetachedFromEngine() -> d
     com.google.firebase.firestore.Query getQuery(java.util.Map) -> e
+    void removeSnapshotListeners() -> e
     com.google.firebase.firestore.Query getReference(java.util.Map) -> f
     com.google.firebase.firestore.Source getSource(java.util.Map) -> g
     com.google.firebase.firestore.Transaction getTransaction(java.util.Map) -> h
-io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$1 -> io.flutter.plugins.firebase.cloudfirestore.a$e:
-    io.flutter.plugin.common.MethodChannel$Result val$result -> a
-    void onSuccess(java.lang.Object) -> a
-    void onSuccess(java.lang.Void) -> a
 io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$10 -> io.flutter.plugins.firebase.cloudfirestore.a$a:
+    io.flutter.plugin.common.MethodChannel$Result val$result -> a
+    void onFailure(java.lang.Exception) -> a
+io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$11 -> io.flutter.plugins.firebase.cloudfirestore.a$b:
     io.flutter.plugin.common.MethodChannel$Result val$result -> a
     io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin this$0 -> b
     void onSuccess(com.google.firebase.firestore.QuerySnapshot) -> a
     void onSuccess(java.lang.Object) -> a
-io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$11 -> io.flutter.plugins.firebase.cloudfirestore.a$b:
+io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$12 -> io.flutter.plugins.firebase.cloudfirestore.a$c:
     io.flutter.plugin.common.MethodChannel$Result val$result -> a
     void onFailure(java.lang.Exception) -> a
-io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$12 -> io.flutter.plugins.firebase.cloudfirestore.a$c:
+io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$13 -> io.flutter.plugins.firebase.cloudfirestore.a$d:
     io.flutter.plugin.common.MethodChannel$Result val$result -> a
     void onSuccess(com.google.firebase.firestore.DocumentSnapshot) -> a
     void onSuccess(java.lang.Object) -> a
-io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$13 -> io.flutter.plugins.firebase.cloudfirestore.a$d:
+io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$14 -> io.flutter.plugins.firebase.cloudfirestore.a$e:
     int[] $SwitchMap$com$google$firebase$firestore$DocumentChange$Type -> a
 io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$2 -> io.flutter.plugins.firebase.cloudfirestore.a$f:
     io.flutter.plugin.common.MethodChannel$Result val$result -> a
-    java.lang.String val$description -> b
-    void onFailure(java.lang.Exception) -> a
+    void onSuccess(java.lang.Object) -> a
+    void onSuccess(java.lang.Void) -> a
 io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$3 -> io.flutter.plugins.firebase.cloudfirestore.a$g:
     io.flutter.plugin.common.MethodChannel$Result val$result -> a
-    void onComplete(com.google.android.gms.tasks.Task) -> a
+    java.lang.String val$description -> b
+    void onFailure(java.lang.Exception) -> a
 io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$4 -> io.flutter.plugins.firebase.cloudfirestore.a$h:
+    io.flutter.plugin.common.MethodChannel$Result val$result -> a
+    void onComplete(com.google.android.gms.tasks.Task) -> a
+io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$5 -> io.flutter.plugins.firebase.cloudfirestore.a$i:
     java.util.Map val$arguments -> a
     io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin this$0 -> d
     com.google.android.gms.tasks.Task val$transactionTCSTask -> c
     com.google.android.gms.tasks.TaskCompletionSource val$transactionTCS -> b
     io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$TransactionResult apply(com.google.firebase.firestore.Transaction) -> a
     java.lang.Object apply(com.google.firebase.firestore.Transaction) -> a
-io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$4$1 -> io.flutter.plugins.firebase.cloudfirestore.a$h$a:
-    io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$4 this$1 -> a
-io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$4$1$1 -> io.flutter.plugins.firebase.cloudfirestore.a$h$a$a:
-    io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$4$1 this$2 -> a
+io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$5$1 -> io.flutter.plugins.firebase.cloudfirestore.a$i$a:
+    io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$5 this$1 -> a
+io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$5$1$1 -> io.flutter.plugins.firebase.cloudfirestore.a$i$a$a:
+    io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$5$1 this$2 -> a
     void error(java.lang.String,java.lang.String,java.lang.Object) -> a
     void notImplemented() -> a
     void success(java.lang.Object) -> a
-io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$5 -> io.flutter.plugins.firebase.cloudfirestore.a$i:
+io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$6 -> io.flutter.plugins.firebase.cloudfirestore.a$j:
     java.util.Map val$arguments -> b
     io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin this$0 -> d
     com.google.firebase.firestore.Transaction val$transaction -> a
     io.flutter.plugin.common.MethodChannel$Result val$result -> c
     java.lang.Void doInBackground(java.lang.Void[]) -> a
-io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$5$1 -> io.flutter.plugins.firebase.cloudfirestore.a$i$a:
-    java.util.Map val$snapshotMap -> a
-    io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$5 this$1 -> b
-io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$5$2 -> io.flutter.plugins.firebase.cloudfirestore.a$i$b:
-    io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$5 this$1 -> b
-    java.lang.Exception val$e -> a
-io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$6 -> io.flutter.plugins.firebase.cloudfirestore.a$j:
-    java.util.Map val$arguments -> a
-    io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin this$0 -> d
-    com.google.firebase.firestore.Transaction val$transaction -> b
-    io.flutter.plugin.common.MethodChannel$Result val$result -> c
-    java.lang.Void doInBackground(java.lang.Void[]) -> a
 io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$6$1 -> io.flutter.plugins.firebase.cloudfirestore.a$j$a:
-    io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$6 this$1 -> a
+    java.util.Map val$snapshotMap -> a
+    io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$6 this$1 -> b
 io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$6$2 -> io.flutter.plugins.firebase.cloudfirestore.a$j$b:
     io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$6 this$1 -> b
     java.lang.Exception val$e -> a
@@ -21853,9 +21894,9 @@ io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$7$2 -> io.flutte
     io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$7 this$1 -> b
     java.lang.Exception val$e -> a
 io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$8 -> io.flutter.plugins.firebase.cloudfirestore.a$l:
-    java.util.Map val$arguments -> b
+    java.util.Map val$arguments -> a
     io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin this$0 -> d
-    com.google.firebase.firestore.Transaction val$transaction -> a
+    com.google.firebase.firestore.Transaction val$transaction -> b
     io.flutter.plugin.common.MethodChannel$Result val$result -> c
     java.lang.Void doInBackground(java.lang.Void[]) -> a
 io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$8$1 -> io.flutter.plugins.firebase.cloudfirestore.a$l$a:
@@ -21864,8 +21905,16 @@ io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$8$2 -> io.flutte
     io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$8 this$1 -> b
     java.lang.Exception val$e -> a
 io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$9 -> io.flutter.plugins.firebase.cloudfirestore.a$m:
-    io.flutter.plugin.common.MethodChannel$Result val$result -> a
-    void onFailure(java.lang.Exception) -> a
+    java.util.Map val$arguments -> b
+    io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin this$0 -> d
+    com.google.firebase.firestore.Transaction val$transaction -> a
+    io.flutter.plugin.common.MethodChannel$Result val$result -> c
+    java.lang.Void doInBackground(java.lang.Void[]) -> a
+io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$9$1 -> io.flutter.plugins.firebase.cloudfirestore.a$m$a:
+    io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$9 this$1 -> a
+io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$9$2 -> io.flutter.plugins.firebase.cloudfirestore.a$m$b:
+    io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$9 this$1 -> b
+    java.lang.Exception val$e -> a
 io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin$DocumentObserver -> io.flutter.plugins.firebase.cloudfirestore.a$n:
     io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin this$0 -> b
     int handle -> a

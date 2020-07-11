@@ -45,7 +45,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.example.drop_chip"
+        applicationId "com.appDevelopment.drop_chip"
         multiDexEnabled true
         minSdkVersion 16
         targetSdkVersion 28

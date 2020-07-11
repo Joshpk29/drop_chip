@@ -70,7 +70,7 @@ INJECTED from C:\Users\Joshp\IdeaProjects\drop_chip\android\app\src\main\Android
 INJECTED from C:\Users\Joshp\IdeaProjects\drop_chip\android\app\src\main\AndroidManifest.xml:1:1-30:12
 INJECTED from C:\Users\Joshp\IdeaProjects\drop_chip\android\app\src\main\AndroidManifest.xml:1:1-30:12
 	package
-		ADDED from C:\Users\Joshp\IdeaProjects\drop_chip\android\app\src\main\AndroidManifest.xml:2:5-36
+		ADDED from C:\Users\Joshp\IdeaProjects\drop_chip\android\app\src\main\AndroidManifest.xml:2:5-43
 		INJECTED from C:\Users\Joshp\IdeaProjects\drop_chip\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Joshp\IdeaProjects\drop_chip\android\app\src\main\AndroidManifest.xml
 	android:versionName
@@ -147,7 +147,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Jo
 		ADDED from C:\Users\Joshp\IdeaProjects\drop_chip\android\app\src\main\AndroidManifest.xml:11:9-43
 	android:name
 		ADDED from C:\Users\Joshp\IdeaProjects\drop_chip\android\app\src\main\AndroidManifest.xml:9:9-57
-activity#com.example.drop_chip.MainActivity
+activity#com.appDevelopment.drop_chip.MainActivity
 ADDED from C:\Users\Joshp\IdeaProjects\drop_chip\android\app\src\main\AndroidManifest.xml:12:9-23:20
 	android:launchMode
 		ADDED from C:\Users\Joshp\IdeaProjects\drop_chip\android\app\src\main\AndroidManifest.xml:14:13-43

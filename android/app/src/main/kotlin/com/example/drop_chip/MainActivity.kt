@@ -1,4 +1,4 @@
-package com.example.drop_chip
+package com.appDevelopment.drop_chip
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity
