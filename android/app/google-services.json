@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "405277961926",
+    "firebase_url": "https://dropchip.firebaseio.com",
+    "project_id": "dropchip",
+    "storage_bucket": "dropchip.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405277961926:android:26dc286ade6a6193adb1c7",
+        "android_client_info": {
+          "package_name": "com.example.drop_chip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "405277961926-q2m1jeat54n2ng23odgcns1q4hr9f15f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARuy_HFv0fFu2Ut0UuCDK1Bh9-I_QICeM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "405277961926-q2m1jeat54n2ng23odgcns1q4hr9f15f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
