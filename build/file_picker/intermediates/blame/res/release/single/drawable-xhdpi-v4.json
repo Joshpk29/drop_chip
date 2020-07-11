@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\Joshp\\IdeaProjects\\drop_chip\\build\\file_picker\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\notification_bg_normal.9.png",
+        "source": "C:\\Users\\Joshp\\.gradle\\caches\\transforms-2\\files-2.1\\3aabd8abbe4aca13d5de98eb4193fb62\\core-1.0.2\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Joshp\\IdeaProjects\\drop_chip\\build\\file_picker\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png",
+        "source": "C:\\Users\\Joshp\\.gradle\\caches\\transforms-2\\files-2.1\\3aabd8abbe4aca13d5de98eb4193fb62\\core-1.0.2\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Joshp\\IdeaProjects\\drop_chip\\build\\file_picker\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png",
+        "source": "C:\\Users\\Joshp\\.gradle\\caches\\transforms-2\\files-2.1\\3aabd8abbe4aca13d5de98eb4193fb62\\core-1.0.2\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Joshp\\IdeaProjects\\drop_chip\\build\\file_picker\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png",
+        "source": "C:\\Users\\Joshp\\.gradle\\caches\\transforms-2\\files-2.1\\3aabd8abbe4aca13d5de98eb4193fb62\\core-1.0.2\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Joshp\\IdeaProjects\\drop_chip\\build\\file_picker\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png",
+        "source": "C:\\Users\\Joshp\\.gradle\\caches\\transforms-2\\files-2.1\\3aabd8abbe4aca13d5de98eb4193fb62\\core-1.0.2\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
+    }
+]

@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\Joshp\\IdeaProjects\\drop_chip\\build\\file_picker\\intermediates\\res\\merged\\release\\values-ur\\values-ur.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Joshp\\.gradle\\caches\\transforms-2\\files-2.1\\3aabd8abbe4aca13d5de98eb4193fb62\\core-1.0.2\\res\\values-ur\\values-ur.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\Joshp\\IdeaProjects\\drop_chip\\build\\file_picker\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-ur\\values-ur.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Joshp\\.gradle\\caches\\transforms-2\\files-2.1\\3aabd8abbe4aca13d5de98eb4193fb62\\core-1.0.2\\res\\values-ur\\values-ur.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

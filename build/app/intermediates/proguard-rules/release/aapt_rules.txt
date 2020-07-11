@@ -1,0 +1,30 @@
+# Referenced at C:\Users\Joshp\IdeaProjects\drop_chip\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:25
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at C:\Users\Joshp\IdeaProjects\drop_chip\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:30
+-keep class com.example.drop_chip.MainActivity { <init>(); }
+# Referenced at C:\Users\Joshp\IdeaProjects\drop_chip\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:135
+-keep class com.google.android.gms.auth.api.signin.RevocationBoundService { <init>(); }
+# Referenced at C:\Users\Joshp\IdeaProjects\drop_chip\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:126
+-keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity { <init>(); }
+# Referenced at C:\Users\Joshp\IdeaProjects\drop_chip\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:155
+-keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
+# Referenced at C:\Users\Joshp\IdeaProjects\drop_chip\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:99
+-keep class com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver { <init>(); }
+# Referenced at C:\Users\Joshp\IdeaProjects\drop_chip\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:113
+-keep class com.google.android.gms.measurement.AppMeasurementJobService { <init>(); }
+# Referenced at C:\Users\Joshp\IdeaProjects\drop_chip\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:94
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(); }
+# Referenced at C:\Users\Joshp\IdeaProjects\drop_chip\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:109
+-keep class com.google.android.gms.measurement.AppMeasurementService { <init>(); }
+# Referenced at C:\Users\Joshp\IdeaProjects\drop_chip\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:119
+-keep class com.google.firebase.auth.internal.FederatedSignInActivity { <init>(); }
+# Referenced at C:\Users\Joshp\IdeaProjects\drop_chip\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:51
+-keep class com.google.firebase.components.ComponentDiscoveryService { <init>(); }
+# Referenced at C:\Users\Joshp\IdeaProjects\drop_chip\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:140
+-keep class com.google.firebase.iid.FirebaseInstanceIdReceiver { <init>(); }
+# Referenced at C:\Users\Joshp\IdeaProjects\drop_chip\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:149
+-keep class com.google.firebase.provider.FirebaseInitProvider { <init>(); }
+# Referenced at C:\Users\Joshp\IdeaProjects\drop_chip\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:25
+-keep class io.flutter.app.FlutterApplication { <init>(); }
+# Referenced at C:\Users\Joshp\IdeaProjects\drop_chip\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:84
+-keep class io.flutter.plugins.imagepicker.ImagePickerFileProvider { <init>(); }
